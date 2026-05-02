@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatbot-website"
+version = "1.0.0"
+description = "Website Chatbot with Gemini AI"
+requires-python = ">=3.9"
+dependencies = [
+    "flask",
+    "pymongo",
+    "requests",
+    "beautifulsoup4",
+    "google-generativeai",
+    "gunicorn",
+]

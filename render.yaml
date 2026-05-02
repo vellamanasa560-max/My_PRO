@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: website-chatbot
+    env: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    pythonVersion: 3.11.0
+    envVars:
+      - key: GEMINI_API_KEY
+      - key: SECRET_KEY
+      - key: MONGO_URI
